@@ -5,79 +5,69 @@ body {
   display: flex;
   justify-content: center;
 }
-
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
   font-weight: bolder;
 }
-
-h2 {
+h2 {  
   font-size: 1.8rem;
   text-align: center;
 }
-
 h3 {
   padding-top: 10px;
   font-size: 1.5rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
-
 .carga {
   display: block;
   text-align: center;
   position: relative;
-  top: -22px;
+  top: -22px;  
 }
-
-.fondo {
+.fondo{  
   background-color: gray;
-  height: 70px;
+  height: 70px;  
 }
-
 #app {
   text-align: center;
   width: 100%;
 }
-
 p {
   white-space: nowrap;
   overflow: hidden;
 }
-
 ol {
   display: inline-block;
   text-align: left;
   padding: 0px;
   margin: 0px;
 }
-
 li {
   margin-right: 13px;
   padding-bottom: 5px;
 }
-
 button {
   background-color: darkgray;
   border-radius: 5px;
   border-style: none;
   color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
   margin: 0px 5px 0px 5px;
   padding: 10px;
+  &:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    color: gray;
+  }
+  &:active {
+    background-color: darkgrey;
+    color: white;
+  }
 }
-button:hover {
-  background-color: lightgray;
-  cursor: pointer;
-  color: gray;
-}
-button:active {
-  background-color: darkgrey;
-  color: white;
-}
-
 input {
   border-radius: 10px;
   border: solid gray 5px;
@@ -85,49 +75,46 @@ input {
   margin-bottom: 20px;
   padding: 7px 15px 7px 15px;
   width: 50%;
+  &:focus {
+    border: solid steelblue 5px;
+    outline-style: none;
+  }
 }
-input:focus {
-  border: solid steelblue 5px;
-  outline-style: none;
-}
-
 .card {
   text-align: center;
   margin-right: 5px;
   height: 200px;
   margin-bottom: 5px;
   overflow: hidden;
-}
-.card img {
-  height: 200px;
-  margin: 0%;
-}
-.card p {
-  position: relative;
-  /* z-index: -1; */
-  top: -42px;
-  background-color: rgba(0, 0, 0, 0.438);
-  margin: 0%;
-  padding: 10px;
-}
-.card:hover {
-  -webkit-transform: scale(1.4) !important;
-  -ms-transform: scale(1.4) !important;
-  transform: scale(1.4) !important;
-  z-index: 3 !important;
-  -webkit-box-shadow: 0px 0px 24px 10px #000000;
-  box-shadow: 0px 0px 24px 10px #000000;
-  animation: zoomIn;
-}
-.card:active {
-  animation: flip;
-  animation-duration: 1.5s;
-}
+  img {
+    height: 200px;
+    margin: 0%;
+  }
+  p {
+    position: relative;
+    /* z-index: -1; */
+    top: -42px;
+    background-color: rgba(0, 0, 0, 0.438);
+    margin: 0%;
+    padding: 10px;
+  }
+  &:hover {
+    -webkit-transform: scale(1.4) !important;
+    -ms-transform: scale(1.4) !important;
+    transform: scale(1.4) !important;
+    z-index: 3 !important;
 
+    -webkit-box-shadow: 0px 0px 24px 10px #000000;
+    box-shadow: 0px 0px 24px 10px #000000;
+    animation: zoomIn;     
+  }  
+  &:active {
+    animation: flip;     
+    animation-duration: 1.5s;
+  }
+}
 .cardGrid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-/*# sourceMappingURL=index.css.map */
